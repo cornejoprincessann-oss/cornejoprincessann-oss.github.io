@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f8dfe8" />
+  <meta name="description" content="Kamerin's Fairy First Birthday & Christening invitation — September 19, 2026, Baguio City." />
+  <title>Kamerin's Fairy First Birthday & Christening</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="locked">
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar" aria-label="Invitation navigation">
+    <button class="brand" data-scroll="0" aria-label="Back to beginning">Kamerin</button>
+    <nav class="dots" aria-label="Invitation pages"></nav>
+    <button id="soundBtn" class="icon-btn" type="button" aria-label="Toggle music" title="Music">♫</button>
+  </header>
+
+  <main id="invitation" aria-live="polite">
+    <section class="cover-screen" id="coverScreen">
+      <div class="cover-glow"></div>
+      <picture>
+        <source srcset="assets/page-1.webp" type="image/webp">
+        <img src="assets/page-1.jpg" alt="You are invited — fairy door surrounded by flowers, mushrooms, butterflies and sparkles." fetchpriority="high" />
+      </picture>
+
+      <div class="cover-copy">
+        <p class="cover-kicker">A little fairy celebration is waiting</p>
+        <h1>You are invited!</h1>
+        <p class="cover-subtitle">Tap the fairy door to enter Kamerin Louise's birthday and christening invitation.</p>
+      </div>
+
+      <div class="cover-actions">
+        <button id="openDoor" class="primary-btn" type="button">
+          <span>Open the Fairy Door</span>
+          <small>Tap to enter Kamerin's celebration</small>
+        </button>
+      </div>
+    </section>
+
+    <div id="story" hidden>
+      <section class="page-card reveal" data-title="Kamerin turns one">
+        <picture><source srcset="assets/page-2.webp" type="image/webp"><img src="assets/page-2.jpg" alt="Our little fairy Kamerin is turning one, with her portrait in a floral oval frame." loading="lazy"></picture>
+      </section>
+
+      <section class="page-card reveal" data-title="Fairy First">
+        <picture><source srcset="assets/page-3.webp" type="image/webp"><img src="assets/page-3.jpg" alt="Join us for Kamerin's Fairy First Birthday and Christening." loading="lazy"></picture>
+      </section>
+
+      <section class="countdown-panel reveal" aria-label="Countdown to the celebration">
+        <p class="eyebrow">The fairy celebration begins in</p>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">--</strong><span>Days</span></div>
+          <div><strong id="hours">--</strong><span>Hours</span></div>
+          <div><strong id="minutes">--</strong><span>Minutes</span></div>
+          <div><strong id="seconds">--</strong><span>Seconds</span></div>
+        </div>
+        <p class="event-date">September 19, 2026 · Saturday</p>
+      </section>
+
+      <section class="page-card reveal" data-title="Event details">
+        <picture><source srcset="assets/page-4.webp" type="image/webp"><img src="assets/page-4.jpg" alt="Event details: Holy Family Parish Church and Casa La El CICM, Bakakeng North, Baguio City." loading="lazy"></picture>
+        <div class="action-strip" aria-label="Open event locations">
+          <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&query=Holy+Family+Parish+Church+Bakakeng+North+Baguio+City" target="_blank" rel="noopener">Church Map</a>
+          <a class="secondary-btn" href="https://www.google.com/maps/search/?api=1&query=Casa+La+El+CICM+Bakakeng+North+Baguio+City" target="_blank" rel="noopener">Reception Map</a>
+        </div>
+      </section>
+
+      <section class="page-card reveal" data-title="Dress code and reminders">
+        <picture><source srcset="assets/page-5.webp" type="image/webp"><img src="assets/page-5.jpg" alt="Dress code and health reminders for Kamerin's celebration." loading="lazy"></picture>
+      </section>
+
+      <section class="page-card reveal" data-title="Kamerin's best">
+        <picture><source srcset="assets/page-6.webp" type="image/webp"><img src="assets/page-6.jpg" alt="A gallery titled Our Little Fairy's Best with six photos of Kamerin." loading="lazy"></picture>
+      </section>
+
+      <section class="page-card reveal" data-title="Gift ideas and RSVP">
+        <picture><source srcset="assets/page-7.webp" type="image/webp"><img src="assets/page-7.jpg" alt="Gift ideas, save the date, and RSVP deadline of August 17, 2026." loading="lazy"></picture>
+      </section>
+
+      <section class="rsvp-panel reveal" data-title="RSVP">
+        <p class="eyebrow">RSVP</p>
+        <h2>RSVP? Click me!</h2>
+        <p>Can't come? It's okay too. We'd still love to hear from you. Kindly RSVP on or before <strong>August 17, 2026</strong>.</p>
+        <button class="primary-btn compact" id="openRsvp" type="button">
+          <span>RSVP? Click me!</span>
+          <small>Can't come? That's okay too.</small>
+        </button>
+      </section>
+
+      <section class="closing reveal">
+        <p class="script">See you in the fairy garden!</p>
+        <h2>With love, Cess &amp; Kieffer</h2>
+        <p>Please RSVP on or before <strong>August 17, 2026</strong>.</p>
+        <div class="closing-actions">
+          <button class="primary-btn compact" id="addCalendar" type="button">Add to Calendar</button>
+          <button class="secondary-btn" id="shareInvite" type="button">Share Invitation</button>
+          <button class="secondary-btn" id="openRsvpBottom" type="button">RSVP? Click me!</button>
+        </div>
+        <button class="back-top" data-scroll="0" type="button">Back to the fairy door ↑</button>
+      </section>
+    </div>
+  </main>
+
+  <div class="modal" id="rsvpModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="rsvpTitle">
+      <button class="modal-close" id="closeRsvp" type="button" aria-label="Close RSVP form">×</button>
+      <p class="eyebrow">Fairy First RSVP</p>
+      <h2 id="rsvpTitle">RSVP? Click me!</h2>
+      <p class="modal-note">Can't come? It's okay too — just let us know below.</p>
+
+      <form id="rsvpForm" class="rsvp-form">
+        <label>
+          Full Name
+          <input type="text" name="guestName" required placeholder="Your full name" />
+        </label>
+
+        <label>
+          Will you attend?
+          <select name="attendance" required>
+            <option value="" selected disabled>Select your response</option>
+            <option value="Yes, I'll come!">Yes, I'll come!</option>
+            <option value="Can't come, but sending love">Can't come, but sending love</option>
+          </select>
+        </label>
+
+        <label>
+          Number of guests
+          <input type="number" name="guestCount" min="1" max="20" value="1" required />
+        </label>
+
+        <label>
+          Contact Number
+          <input type="tel" name="contact" placeholder="09XXXXXXXXX" />
+        </label>
+
+        <label>
+          Message for Kamerin
+          <textarea name="message" rows="4" placeholder="Write a short sweet message"></textarea>
+        </label>
+
+        <button class="primary-btn form-submit" type="submit">
+          <span>Submit RSVP</span>
+          <small>Your response will be saved on this device</small>
+        </button>
+      </form>
+
+      <div id="rsvpThanks" class="rsvp-thanks" hidden></div>
+    </div>
+  </div>
+
+  <audio id="music" loop preload="none" aria-hidden="true">
+    <!-- Add an MP3 file named fairy-music.mp3 inside assets to enable background music. -->
+    <source src="assets/fairy-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
